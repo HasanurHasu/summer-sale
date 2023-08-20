@@ -46,7 +46,7 @@
         </div>
     </header>
 
-    <main class="max-w-6xl m-auto">
+    <main class="max-w-7xl m-auto">
 
         <section class="grid mt-20 grid-cols-4 gap-5">
             <div class="col-span-3">
@@ -55,10 +55,9 @@
                 <div class="grid grid-cols-3 gap-10">
 
                     <!-- card 1 -->
-                    <div
-                        class="card cursor-pointer w-64 p-5 bg-base-100 shadow-xl border-2 border-white hover:border-[#E527B2] hover:border-2">
+                    <div id="kitchenware-one" class="card cursor-pointer w-64 p-5 bg-base-100 shadow-xl border-2 border-white hover:border-[#E527B2] hover:border-2">
                         <div class="relative flex items-center justify-center ">
-                            <div class="absolute inset-0 bg-gray-200 opacity-50 z-0 rounded-lg"></div>
+                            <div class="absolute inset-0 bg-gray-200 opacity-20 z-0 rounded-lg"></div>
                             <img src="./images/prod1.png" alt="Your Image" class="py-4">
                         </div>
                         <div class=" items-center text-center mt-5">
@@ -70,15 +69,14 @@
                                 <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
                             </div>
                             <h2 class="text-black text-center font-semibold">K. Accessories</h2>
-                            <p>39.00 TK</p>
+                            <p> <span id="kitchenware-one-value">39</span>.00 TK</p>
                         </div>
                     </div>
-                    <!-- card 1 -->
-                    <div
-                        class="card cursor-pointer w-64 p-5 bg-base-100 shadow-xl border-2 border-white hover:border-[#E527B2] hover:border-2">
+                    <!-- card 2 -->
+                    <div  class="card cursor-pointer w-64 p-5 bg-base-100 shadow-xl border-2 border-white hover:border-[#E527B2] hover:border-2">
                         <div class="relative flex items-center justify-center ">
-                            <div class="absolute inset-0 bg-gray-200 opacity-50 z-0 rounded-lg"></div>
-                            <img src="./images/prod1.png" alt="Your Image" class="py-4">
+                            <div class="absolute inset-0 bg-gray-200 opacity-20 z-0 rounded-lg"></div>
+                            <img src="./images/prod2.png" alt="Kitchenware" class="py-4">
                         </div>
                         <div class=" items-center text-center mt-5">
                             <div class="rating rating-sm">
@@ -89,7 +87,7 @@
                                 <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
                             </div>
                             <h2 class="text-black text-center font-semibold">K. Accessories</h2>
-                            <p>39.00 TK</p>
+                            <p> <span id="">39</span>.00 TK</p>
                         </div>
                     </div>
                     <!-- card 1 -->
@@ -178,19 +176,29 @@
             </div>
             <!-- Coupon -->
             <div class="col-span-1 mt-20">
-                <div class="card flex flex-col bg-white p-4">
-                    <h1 class="text-black text-2xl font-medium mb-4">Have coupon?</h1>
-                    <div class="flex justify-between rounded-lg border border-[#11111126]">
-                        <input class="w-[140px] pl-4" placeholder="Coupon code" type="text"> 
-                        <button class="text-white text-xl font-semibold py-2 px-5 rounded-r-lg bg-[#E527B2]">Apply</button>
+                <div class="flex flex-col gap-4">
+                    <div class="card flex flex-col bg-white p-4">
+                        <h1 class="text-black text-2xl font-medium mb-4">Have coupon?</h1>
+                        <div class="flex justify-between rounded-lg border border-[#11111126]">
+                            <input class="w-[140px] pl-4" placeholder="Coupon code" type="text"> 
+                            <button class="text-white text-xl font-semibold py-2 px-5 rounded-r-lg bg-[#E527B2]">Apply</button>
+                        </div>
                     </div>
+                    
+                    <div class="card flex flex-col bg-white p-4 space-y-4">
+                        <p class="text-2xl font-medium">Total Price : <span  id="total-price" class="text-[#1111117F]">00<span class="text-[#1111117F]">TK</span></span></p>
+                        <p id="discount" class="text-2xl font-medium">Discount : <span class="text-[#1111117F]">00.00<span class="text-[#1111117F]">TK</span></span></p>
+                        <p id="total" class="text-2xl font-medium">Total : <span class="text-[#1111117F]">00.00<span class="text-[#1111117F]">TK</span></span></p>
+                    </div>
+
+
                 </div>
             </div>
         </section>
 
     </main>
 
-
+<script src="./js/summer.js"></script>
 </body>
 
 </html>
