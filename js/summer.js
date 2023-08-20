@@ -6,7 +6,7 @@ function getElementValue(elementID) {
 
 function setValueTotal(elementID, value) {
     const totalValueElement = document.getElementById(elementID);
-    totalValueElement.innerText = value.toFixed(2);
+    totalValueElement.innerText = value;
 }
 
 function addToEntryElement(text){
@@ -92,15 +92,7 @@ document.getElementById('cates').addEventListener('click', function () {
 })
 
 
-// const totalPriceValue = document.getElementById('total-price-p');
-// const totalPrice = totalPriceValue.childNodes;
-// console.log(totalPrice[1].innerText);
-// // console.log(totalPriceValue);
-// // if(totalPriceValue >= 0){
-// //     const btnCoupon = document.getElementById('btn-coupon');
-// //     btnCoupon.style.display = "none"
-// // }
 
-
+console.log(document.getElementById('total-price').innerText);;
 
 
