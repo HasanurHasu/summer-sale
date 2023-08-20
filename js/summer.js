@@ -1,3 +1,25 @@
+function getElementValue(elementID) {
+    const element = document.getElementById(elementID);
+    const elementValue = parseFloat(element.innerText);
+    return elementValue;
+}
+
+function setValueTotal(elementID, value) {
+    const totalValueElement = document.getElementById(elementID);
+    totalValueElement.innerText = value.toFixed(2);
+}
+
+function addToEntryElement(text){
+    const calculationEntry = document.getElementById('calculation-entry');
+
+    const count = calculationEntry.childElementCount;
+
+    const p = document.createElement('p');
+    p.innerText = `${count+1}. ${text}`;
+    p.classList.add('text-2xl', 'font-medium')
+    calculationEntry.appendChild(p);
+}
+
 
 
 
@@ -8,6 +30,8 @@ document.getElementById('kitchenware-one').addEventListener('click', function ()
     const totalPrice = totalPriceValue + kitchenwareOneValue;
 
     setValueTotal('total-price', totalPrice);
+
+    addToEntryElement('K. Accessories');
 })
 
 document.getElementById('kitchenware-two').addEventListener('click', function () {
@@ -17,6 +41,8 @@ document.getElementById('kitchenware-two').addEventListener('click', function ()
     const totalPrice = totalPriceValue + kitchenwareTwoValue;
 
     setValueTotal('total-price', totalPrice)
+
+    addToEntryElement('Home Cooker');
 
 })
 
@@ -28,6 +54,7 @@ document.getElementById('home-cooker').addEventListener('click', function () {
 
     setValueTotal('total-price', totalPrice)
 
+    addToEntryElement('Home Cooker');
 })
 
 document.getElementById('sports-cap').addEventListener('click', function () {
@@ -37,6 +64,8 @@ document.getElementById('sports-cap').addEventListener('click', function () {
     const totalPrice = totalPriceValue + sportsCapValue;
 
     setValueTotal('total-price', totalPrice)
+
+    addToEntryElement('Sports Back Cap');
 
 })
 
@@ -48,6 +77,7 @@ document.getElementById('jersey').addEventListener('click', function () {
 
     setValueTotal('total-price', totalPrice)
 
+    addToEntryElement('Full Jersey Set');
 })
 
 document.getElementById('cates').addEventListener('click', function () {
@@ -58,19 +88,19 @@ document.getElementById('cates').addEventListener('click', function () {
 
     setValueTotal('total-price', totalPrice)
 
+    addToEntryElement('Sports cates');
 })
 
 
+// const totalPriceValue = document.getElementById('total-price-p');
+// const totalPrice = totalPriceValue.childNodes;
+// console.log(totalPrice[1].innerText);
+// // console.log(totalPriceValue);
+// // if(totalPriceValue >= 0){
+// //     const btnCoupon = document.getElementById('btn-coupon');
+// //     btnCoupon.style.display = "none"
+// // }
 
 
 
-function getElementValue(elementID) {
-    const element = document.getElementById(elementID);
-    const elementValue = parseFloat(element.innerText);
-    return elementValue;
-}
 
-function setValueTotal(elementID, value) {
-    const totalValueElement = document.getElementById(elementID);
-    totalValueElement.innerText = value.toFixed(2);
-}
