@@ -23,6 +23,9 @@ function getPrice(data) {
         couponBtn.classList.remove('bg-gray-500');
         couponBtn.classList.add('bg-[#E527B2]');
         couponBtn.removeAttribute('disabled')
+
+        const couponField = document.getElementById('coupon-field');
+        couponField.removeAttribute('disabled');
     }
 
     if (total >= 0) {
@@ -30,6 +33,13 @@ function getPrice(data) {
         purchaseBtn.classList.remove('bg-gray-500');
         purchaseBtn.classList.add('bg-[#E527B2]');
         purchaseBtn.removeAttribute('disabled')
+    }
+
+    if(total >= 200){
+        const discounted = total * 0.2;
+        const totalDiscounted = total - discounted;
+        setValueTotal('discount', discounted);
+        setValueTotal('total-discount', totalDiscounted);
     }
 
 
