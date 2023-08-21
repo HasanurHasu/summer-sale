@@ -46,17 +46,17 @@
         </div>
     </header>
 
-    <main class="max-w-7xl m-auto">
+    <main class="mx-10 lg:max-w-6xl lg:m-auto">
 
-        <section class="grid mt-20 grid-cols-4 gap-5">
-            <div class="col-span-3">
+        <section class="grid mt-20 md:grid-cols-3 lg:grid-cols-4 gap-5">
+            <div class="md:col-span-2 lg:col-span-3">
                 <!-- Kitchenware section -->
                 <h1 class="text-4xl font-semibold mb-10">Kitchenware</h1>
-                <div class="grid grid-cols-3 gap-10">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
 
                     <!--Kitchenware card 1 -->
                     <div onclick="getPrice(this)"
-                        class="card cursor-pointer w-64 p-5 bg-base-100 shadow-xl border-2 border-white hover:border-[#E527B2] hover:border-2">
+                        class="card cursor-pointer p-5 bg-base-100 shadow-xl border-2 border-white hover:border-[#E527B2] hover:border-2">
                         <div style="background-color: #1111110D;" class=" flex items-center justify-center rounded-lg">
                             <img src="./images/prod1.png" alt="Your Image" class="py-4">
                         </div>
@@ -74,7 +74,7 @@
                     </div>
                     <!--Kitchenware card 2 -->
                     <div onclick="getPrice(this)"
-                        class="card cursor-pointer w-64 p-5 bg-base-100 shadow-xl border-2 border-white hover:border-[#E527B2] hover:border-2">
+                        class="card cursor-pointer p-5 bg-base-100 shadow-xl border-2 border-white hover:border-[#E527B2] hover:border-2">
                         <div style="background-color: #1111110D;" class=" flex items-center justify-center rounded-lg">
                             <img src="./images/prod2.png" alt="Kitchenware" class="py-4">
                         </div>
@@ -92,7 +92,7 @@
                     </div>
                     <!--Kitchenware card 3 -->
                     <div onclick="getPrice(this)"
-                        class="card cursor-pointer w-64 p-5 bg-base-100 shadow-xl border-2 border-white hover:border-[#E527B2] hover:border-2">
+                        class="card cursor-pointer p-5 bg-base-100 shadow-xl border-2 border-white hover:border-[#E527B2] hover:border-2">
                         <div style="background-color: #1111110D;" class=" flex items-center justify-center rounded-lg">
                             <img src="./images/prod3.png" alt="Home Cooker" class="py-4">
                         </div>
@@ -110,11 +110,11 @@
                     </div>
                 </div>
                 <h1 class="text-4xl font-semibold mb-10 mt-20">Sportswear</h1>
-                <div class="grid grid-cols-3 gap-10">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
 
                     <!--Sportswear card 1 -->
                     <div onclick="getPrice(this)"
-                        class="card cursor-pointer w-64 p-5 bg-base-100 shadow-xl border-2 border-white hover:border-[#E527B2] hover:border-2">
+                        class="card cursor-pointer p-5 bg-base-100 shadow-xl border-2 border-white hover:border-[#E527B2] hover:border-2">
                         <div style="background-color: #1111110D;" class=" flex items-center justify-center rounded-lg">
                             <img src="./images/prod4.png" alt="Sports Back Cap" class="py-4">
                         </div>
@@ -132,7 +132,7 @@
                     </div>
                     <!--Sportswear card 2 -->
                     <div onclick="getPrice(this)"
-                        class="card cursor-pointer w-64 p-5 bg-base-100 shadow-xl border-2 border-white hover:border-[#E527B2] hover:border-2">
+                    class="card cursor-pointer p-5 bg-base-100 shadow-xl border-2 border-white hover:border-[#E527B2] hover:border-2">
                         <div style="background-color: #1111110D;" class=" flex items-center justify-center rounded-lg">
                             <img src="./images/prod5.png" alt="Your Image" class="py-4">
                         </div>
@@ -150,7 +150,7 @@
                     </div>
                     <!--Sportswear card 3 -->
                     <div onclick="getPrice(this)"
-                        class="card cursor-pointer w-64 p-5 bg-base-100 shadow-xl border-2 border-white hover:border-[#E527B2] hover:border-2">
+                        class="card cursor-pointer p-5 bg-base-100 shadow-xl border-2 border-white hover:border-[#E527B2] hover:border-2">
                         <div style="background-color: #1111110D;" class=" flex items-center justify-center rounded-lg">
                             <img src="./images/prod6.png" alt="Sports cates" class="py-4">
                         </div>
@@ -174,12 +174,12 @@
             <div class="col-span-1 mt-20">
                 <div class="flex flex-col gap-4">
                     <div class="card flex flex-col bg-white p-4">
-                        <h1 class="text-black text-2xl font-medium mb-4">Have coupon?</h1>
+                        <h1 class="text-black text-xl font-medium mb-4">Have coupon?</h1>
                         <div class="flex justify-between rounded-lg border border-[#11111126]">
                             <input disabled id="coupon-field" class="w-[140px] pl-4" placeholder="Coupon code"
                                 type="text">
                             <button onclick="couponCodeApply()" disabled id="btn-coupon"
-                                class="text-white text-xl font-semibold py-2 px-5 rounded-r-lg bg-gray-500">Apply</button>
+                                class="text-white text-lg font-semibold py-2 px-5 rounded-r-lg bg-gray-500">Apply</button>
                         </div>
                     </div>
 
@@ -188,15 +188,15 @@
 
                         </div>
                         <hr>
-                        <p class="text-2xl font-medium">Total Price : <span id="total-price"
+                        <p class="text-xl font-medium">Total Price : <span id="total-price"
                                 class="text-[#1111117F]">00.00</span><span class="text-[#1111117F]">TK</span></p>
-                        <p class="text-2xl font-medium">Discount : <span id="discount"
+                        <p class="text-xl font-medium">Discount : <span id="discount"
                                 class="text-[#1111117F]">00.00</span><span class="text-[#1111117F]">TK</span></p>
-                        <p class="text-2xl font-medium">Total : <span id="total-discount"
+                        <p class="text-xl font-medium">Total : <span id="total-discount"
                                 class="text-[#1111117F]">00.00</span><span class="text-[#1111117F]">TK</span></p>
                         <hr>
                         <button disabled onclick="my_modal_5.showModal()" id="purchase-btn"
-                            class="text-white text-xl font-semibold py-2 px-5 rounded-lg bg-gray-500">Make
+                            class="text-white text-lg font-semibold py-2 px-5 rounded-lg bg-gray-500">Make
                             Purchase</button>
 
                         <!-- Open the modal using ID.showModal() method -->
@@ -209,7 +209,7 @@
                                     <h2 class="text-5xl font-bold">Congratulations</h2>
                                     <p class="my-4">Your Purchase the product</p>
                                     <div class="card-actions">
-                                        <button onclick="modalClickToReset()" class="text-white text-xl font-semibold py-3 px-10 rounded-lg ml-4 bg-[#E527B2]">Go Home</button>
+                                        <button onclick="modalClickToReset()" class="text-white text-lg font-semibold py-3 px-10 rounded-lg ml-4 bg-[#E527B2]">Go Home</button>
                                     </div>
                                 </div>
                             </form>

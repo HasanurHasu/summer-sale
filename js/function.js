@@ -7,7 +7,7 @@ function getPrice(data) {
     const count = itemEntry.childElementCount;
     const p = document.createElement('p');
     p.innerText = `${count + 1}. ${itemTittleName}`;
-    p.classList.add('entry-item', 'text-2xl', 'font-medium');
+    p.classList.add('entry-item', 'text-xl', 'font-medium');
     itemEntry.appendChild(p);
 
     const itemPriceString = data.childNodes[3].childNodes[5].childNodes[1].innerText;
