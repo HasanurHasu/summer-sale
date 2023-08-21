@@ -35,14 +35,20 @@ function getPrice(data) {
         purchaseBtn.removeAttribute('disabled')
     }
 
-    if(total >= 200){
+}
+
+
+
+function couponCodeApply() {
+    const couponField = document.getElementById('coupon-field');
+    const couponCode = couponField.value;
+
+    if (total >= 200 && couponCode == 'SELL200') {
         const discounted = total * 0.2;
         const totalDiscounted = total - discounted;
         setValueTotal('discount', discounted);
         setValueTotal('total-discount', totalDiscounted);
     }
-
-
 }
 
 
