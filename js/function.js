@@ -41,7 +41,7 @@ function couponCodeApply() {
     const couponField = document.getElementById('coupon-field');
     const couponCode = couponField.value;
     if (couponCode !== 'SELL200') {
-        alert("invalid coupon try again");
+        alert("Invalid coupon code try again");
     }
     if (total >= 200 && couponCode == 'SELL200') {
         const discounted = total * 0.2;
