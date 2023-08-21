@@ -7,7 +7,7 @@ function getPrice(data) {
     const count = itemEntry.childElementCount;
     const p = document.createElement('p');
     p.innerText = `${count + 1}. ${itemTittleName}`;
-    p.classList.add('text-2xl', 'font-medium')
+    p.classList.add('entry-item', 'text-2xl', 'font-medium');
     itemEntry.appendChild(p);
     console.log(itemTittleName);
 
@@ -32,7 +32,7 @@ function getPrice(data) {
         const purchaseBtn = document.getElementById('purchase-btn');
         purchaseBtn.classList.remove('bg-gray-500');
         purchaseBtn.classList.add('bg-[#E527B2]');
-        purchaseBtn.removeAttribute('disabled')
+        purchaseBtn.removeAttribute('disabled');
     }
 
 }
@@ -57,3 +57,30 @@ function setValueTotal(elementID, value) {
     totalValueElement.innerText = value.toFixed(2);
 }
 
+function modalClickToReset() {
+    total = 0;
+    const totalPrice = document.getElementById('total-price');
+    totalPrice.innerText = '00.00';
+
+    const discount = document.getElementById('discount');
+    discount.innerText = '00.00';
+
+    const totalDiscount = document.getElementById('total-discount');
+    totalDiscount.innerText = '00.00';
+
+    const itemEntry = document.querySelectorAll('.entry-item');
+    for (item of itemEntry) {
+        item.remove();
+    }
+
+    const purchaseBtn = document.getElementById('purchase-btn');
+    purchaseBtn.classList.add('bg-gray-500');
+    purchaseBtn.setAttribute('disabled', "");
+
+    const couponBtn = document.getElementById('btn-coupon');
+    couponBtn.classList.add('bg-gray-500');
+    couponBtn.setAttribute('disabled', '');
+
+    const couponField = document.getElementById('coupon-field');
+    couponField.setAttribute('disabled', '');
+}
