@@ -48,17 +48,17 @@
 
     <main class="mx-10 lg:max-w-6xl lg:m-auto">
 
-        <section class="grid mt-20 md:grid-cols-3 lg:grid-cols-4 gap-5">
-            <div class="md:col-span-2 lg:col-span-3">
+        <section class="grid grid-cols-1 mt-20 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            <div class="lg:col-span-3">
                 <!-- Kitchenware section -->
                 <h1 class="text-4xl font-semibold mb-10">Kitchenware</h1>
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-10">
 
                     <!--Kitchenware card 1 -->
                     <div onclick="getPrice(this)"
                         class="card cursor-pointer p-5 bg-base-100 shadow-xl border-2 border-white hover:border-[#E527B2] hover:border-2">
                         <div style="background-color: #1111110D;" class=" flex items-center justify-center rounded-lg">
-                            <img src="./images/prod1.png" alt="Your Image" class="py-4">
+                            <img src="./images/prod1.png" alt="K. Accessories" class="py-4">
                         </div>
                         <div class=" items-center text-center mt-5">
                             <div class="rating rating-sm">
@@ -76,7 +76,7 @@
                     <div onclick="getPrice(this)"
                         class="card cursor-pointer p-5 bg-base-100 shadow-xl border-2 border-white hover:border-[#E527B2] hover:border-2">
                         <div style="background-color: #1111110D;" class=" flex items-center justify-center rounded-lg">
-                            <img src="./images/prod2.png" alt="Kitchenware" class="py-4">
+                            <img src="./images/prod2.png" alt="K. Accessories" class="py-4">
                         </div>
                         <div class=" items-center text-center mt-5">
                             <div class="rating rating-sm">
@@ -109,8 +109,10 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Sportswear section -->
                 <h1 class="text-4xl font-semibold mb-10 mt-20">Sportswear</h1>
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-10">
 
                     <!--Sportswear card 1 -->
                     <div onclick="getPrice(this)"
@@ -134,7 +136,7 @@
                     <div onclick="getPrice(this)"
                     class="card cursor-pointer p-5 bg-base-100 shadow-xl border-2 border-white hover:border-[#E527B2] hover:border-2">
                         <div style="background-color: #1111110D;" class=" flex items-center justify-center rounded-lg">
-                            <img src="./images/prod5.png" alt="Your Image" class="py-4">
+                            <img src="./images/prod5.png" alt="Full Jersey Set" class="py-4">
                         </div>
                         <div class=" items-center text-center mt-5">
                             <div class="rating rating-sm">
@@ -168,8 +170,68 @@
                     </div>
                 </div>
 
+                <!-- Furniture section -->
+                <h1 class="text-4xl font-semibold mb-10 mt-20">Furniture</h1>
+                <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-10">
+
+                    <!--Furniture card 1 -->
+                    <div onclick="getPrice(this)"
+                        class="card cursor-pointer p-5 bg-base-100 shadow-xl border-2 border-white hover:border-[#E527B2] hover:border-2">
+                        <div style="background-color: #1111110D;" class=" flex items-center justify-center rounded-lg">
+                            <img src="./images/prod7.png" alt="Single Relax Chair" class="py-4">
+                        </div>
+                        <div class=" items-center text-center mt-5">
+                            <div class="rating rating-sm">
+                                <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <h2 class="text-black text-center font-semibold">Single Relax Chair</h2>
+                            <p> <span id="sports-cap-price">185</span>.00 TK</p>
+                        </div>
+                    </div>
+                    <!--Sportswear card 2 -->
+                    <div onclick="getPrice(this)"
+                    class="card cursor-pointer p-5 bg-base-100 shadow-xl border-2 border-white hover:border-[#E527B2] hover:border-2">
+                        <div style="background-color: #1111110D;" class=" flex items-center justify-center rounded-lg">
+                            <img src="./images/prod8.png" alt="Children play" class="py-4">
+                        </div>
+                        <div class=" items-center text-center mt-5">
+                            <div class="rating rating-sm">
+                                <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <h2 class="text-black text-center font-semibold">Children play</h2>
+                            <p> <span id="jersey-price">299</span>.00 TK</p>
+                        </div>
+                    </div>
+                    <!--Sportswear card 3 -->
+                    <div onclick="getPrice(this)"
+                        class="card cursor-pointer p-5 bg-base-100 shadow-xl border-2 border-white hover:border-[#E527B2] hover:border-2">
+                        <div style="background-color: #1111110D;" class=" flex items-center justify-center rounded-lg">
+                            <img src="./images/prod9.png" alt="Flexible Sofa" class="py-4">
+                        </div>
+                        <div class=" items-center text-center mt-5">
+                            <div class="rating rating-sm">
+                                <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" checked />
+                                <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <h2 class="text-black text-center font-semibold">Flexible Sofa</h2>
+                            <p> <span id="cates-price">339</span>.00 TK</p>
+                        </div>
+                    </div>
+                </div>
 
             </div>
+
             <!-- Coupon -->
             <div class="col-span-1 mt-20">
                 <div class="flex flex-col gap-4">
@@ -200,13 +262,13 @@
                             Purchase</button>
 
                         <!-- Open the modal using ID.showModal() method -->
-                        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                        <dialog id="my_modal_5" class="modal m-auto modal-bottom sm:modal-middle">
                             <form method="dialog" class="modal-box">
                                 <figure class="px-10 pt-10">
-                                    <img src="./images/congo.png" alt="Congratulations" class="rounded-xl" />
+                                    <img src="./images/congo.png" alt="Congratulations"  />
                                 </figure>
                                 <div class="card-body items-center text-center">
-                                    <h2 class="text-5xl font-bold">Congratulations</h2>
+                                    <h2 class="text-4xl lg:text-5xl font-bold">Congratulations</h2>
                                     <p class="my-4">Your Purchase the product</p>
                                     <div class="card-actions">
                                         <button onclick="modalClickToReset()" class="text-white text-lg font-semibold py-3 px-10 rounded-lg ml-4 bg-[#E527B2]">Go Home</button>
