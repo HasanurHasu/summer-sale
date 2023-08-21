@@ -9,12 +9,10 @@ function getPrice(data) {
     p.innerText = `${count + 1}. ${itemTittleName}`;
     p.classList.add('entry-item', 'text-2xl', 'font-medium');
     itemEntry.appendChild(p);
-    console.log(itemTittleName);
 
     const itemPriceString = data.childNodes[3].childNodes[5].childNodes[1].innerText;
     const itemPrice = parseFloat(itemPriceString);
     total = total + itemPrice;
-    console.log(total);
 
     setValueTotal('total-price', total);
 
